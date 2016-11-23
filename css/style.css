@@ -1,0 +1,97 @@
+/* ------------------------------------------------------------ *\
+|* Single Page Smooth Scroll CSS
+\* ------------------------------------------------------------ */
+#sidebar {
+    width: 150px;
+    float: left;
+}
+
+#content {
+    width: 75%;
+    float: right;
+    padding: 0 20px;
+}
+
+/* navigation */
+nav {
+    width: 150px;
+    background-color: #333;
+}
+
+nav.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    margin-top: 20px;
+}
+
+nav li a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+nav li {
+    padding: 0 20px;
+}
+
+nav li:hover {
+    background-color: rgba(200,200,200,0.2);
+    cursor: pointer;
+}
+
+li.nav-active {
+    color: #000;
+    background-color: burlywood;
+}
+
+/* sections */
+section {
+    width: 100%;
+    padding: 20px;
+    background: rgb(17,20,26);
+    color: #aaa;
+    font-size: 13px;
+    border: 1px solid #333;
+    margin: 20px 0;
+}
+
+section h1 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+}
+
+section p {
+    text-align: justify;
+    font-size: 13px;
+    padding: 5px;
+}
+
+/* ------------------------------------------------------------ *\
+|* Media Queries
+\* ------------------------------------------------------------ */
+@media all and (max-width: 768px) { 
+    nav, #sidebar, #content {
+        width: 100%;
+    }
+
+    #sidebar {
+        padding: 20px 0;
+    }
+
+    nav.stick {
+        margin-top: 0;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+
+}

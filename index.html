@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html><head>
+    <!-- title and meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Expandable Search Bar with CSS Transitions</title>
+    
+    <!-- css -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- Navigation
+================================================== -->
+<div id="info-bar">
+    <div class="container clearfix">
+        <span class="float-left">
+            <a href="https://lukelinwood.wordpress.com/2016/11/17/expandable-css-search-bar">
+                <i class="fa fa-reply"></i> Return to Tutorial
+            </a>
+        </span>
+        <span class="float-right">
+            <a href="http://lukelinwood.wordpress.com">
+                LukeLinwood.COM
+            </a> 
+        </span>
+    </div>
+</div><!-- /#info-bar -->
+
+<div id="title" style="margin-top:20px">
+    <p>Brought to you by:</p>
+    <h2>LukeLinwood.COM</h2>
+</div>
+
+
+<!-- Body Wrapper - Layout
+================================================== -->
+<div id="full-width-layout">
+
+    <!-- Header
+    ================================================== -->
+    <header>
+        <div id="title" class="container">
+            <a href="https://lukelinwood.wordpress.com">
+                <img src="logo/logo_light.png"></a>
+            <h1>Single Page Smooth Scroll and Navigation</h1>
+        </div>
+    </header><!-- /header -->
+
+    <!-- Page Content
+    ================================================== -->
+    <div class="container clearfix">
+        <div id="sidebar">
+            <div id="nav-anchor"></div>
+            <nav class="hide-nav"></nav>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div><!-- /#sidebar -->
+              
+        <div id="content">
+            <section id="home">
+                <h1>Home</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                    quod mazim placerat facer possim assum.
+                </p>
+            </section>
+        
+            <section id="about">
+                <h1>About</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                    quod mazim placerat facer possim assum.
+                </p>
+            </section>
+        
+            <section id="services">
+                <h1>Services</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </p>
+            
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </p>
+            </section>
+        
+            <section id="blog">
+                <h1>Blog</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                </p>
+            </section>
+        
+            <section id="contact">
+                <h1>Contact</h1>
+                <p>
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                    quod mazim placerat facer possim assum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                </p>
+
+                <p>
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                    quod mazim placerat facer possim assum.
+                </p>
+            </section>
+        </div><!-- /#content -->
+    </div>
+
+</div><!-- /layout -->
+
+<!-- Footer section
+================================================== -->
+<footer>
+    <div class="container clearfix">
+        <span class="float-left">
+            <div class="copyright">
+                <a href="http://lukelinwood.wordpress.com" target="_blank">LukeLinwood.COM</a>
+                <p>&copy; 2016, Luke Linwood</p>
+            </div>
+        </span>
+        <span class="float-right">
+            <!-- Social Media Links
+            ================================================== -->
+            <ul class="social-icons">
+                <p>STAY CONNECTED</p>
+                <li><a href="http://twitter.com/luke_linwood" class="social-icon">
+                    <i class="fa fa-facebook"></i></a></li>
+                <li><a href="http://facebook.com/luke.linwood.1" class="social-icon">
+                    <i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://instagram.com/lukelinwood" class="social-icon">
+                    <i class="fa fa-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/in/luke-linwood-b20a9583" class="social-icon">
+                    <i class="fa fa-linkedin"></i></a></li>
+                <!--<li><a href="" class="social-icon"><i class="fa fa-google-plus"></i></a></li>-->
+                <!--<li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>-->
+                <!--<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>-->
+            </ul>
+        </span>
+    </div>
+</footer><!-- /footer -->
+
+<!-- JavaScript section
+================================================== -->
+<script>
+    $(document).ready(function(){   
+        /** 
+         * This part does the "fixed navigation after scroll" functionality
+         * We use the jQuery function scroll() to recalculate our variables as the 
+         * page is scrolled.
+         */
+        function NavStick() {
+            var windowWidth = $(window).width(); // get the width of the window
+            var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
+            var div_top = $('#nav-anchor').offset().top;
+                if (window_top > div_top) {
+                    $('nav').addClass('stick');
+                    if (windowWidth < 768) {
+                        $('#content').css('margin-top','240px');
+                    }
+                } else {
+                    $('nav').removeClass('stick');
+                    if (windowWidth < 768) {
+                        $('#content').css('margin-top','0');
+                    }
+                }
+        };
+         
+        /**
+         * This part causes smooth scrolling using jQuery and Native Smooth Scroll.
+         */
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $(this.getAttribute('href'));
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+           
+        /**
+         * This part handles the highlighting functionality.
+         * We use the scroll functionality again for adding 
+         * and removing classes, and conditional testing.
+         */ 
+        var aChildren = $("nav li").children(); // find the a children of the list items
+        var aArray = []; // create the empty aArray
+        for (var i = 0; i < aChildren.length; i++) {    
+            var aChild = aChildren[i];
+            var ahref = $(aChild).attr('href');
+            aArray.push(ahref);
+        } // this for loop fills the aArray with attribute href values
+
+        function NavPosition() {
+            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+            var windowHeight = $(window).height(); // get the height of the window
+            var docHeight = $(document).height();
+            
+            for (var i = 0; i < aArray.length; i++) {
+                var theID = aArray[i];
+                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+                var divHeight = $(theID).height(); // get the height of the div in question
+                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                    $("a[href='" + theID + "']").parent().addClass("nav-active");
+                } else {
+                    $("a[href='" + theID + "']").parent().removeClass("nav-active");
+                }
+            }
+            
+            if(windowPos + windowHeight == docHeight) {
+                if (!$("nav li:last-child a").parent().hasClass("nav-active")) {
+                    var navActiveCurrent = $(".nav-active").attr("href");
+                    $("a").parent().removeClass("nav-active");
+                    $("nav li:last-child a").parent().addClass("nav-active");
+                }
+            }
+        };
+
+        $(window).on('load scroll resize', function() {
+          NavStick();
+          NavPosition();
+        });      
+    });
+</script>
+
+</body></html>
